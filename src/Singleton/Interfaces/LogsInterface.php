@@ -1,9 +1,9 @@
 <?php
  
-namespace PHPpatterns\Singleton;
+namespace PHPpatterns\Singleton\Interfaces;
 
 interface LogsInterface {
-  public static function getInstance(): static;
+  public static function getInstance(): self;
   public function puts(string $datas): void;
   public function get(): ?string;
   public function clear(): void;

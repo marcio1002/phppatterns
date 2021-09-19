@@ -3,8 +3,8 @@
 require_once dirname(__DIR__, 2) . '/vendor/autoload.php';
 
 use 
-  PHPpatterns\FactoryMethod\Factory\DodgeFactory,
-  PHPpatterns\FactoryMethod\Factory\TeslaFactory;
+  PHPpatterns\FactoryMethod\Factories\DodgeFactory,
+  PHPpatterns\FactoryMethod\Factories\TeslaFactory;
 
 $dodgeFactory = new DodgeFactory();
 $teslaFactory = new TeslaFactory();

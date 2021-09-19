@@ -1,18 +1,18 @@
 <?php
 
-namespace PHPpatterns\Singleton;
+namespace PHPpatterns\Singleton\Logs;
 
-class Logs implements LogsInterface {
-  private static Logs $instance;
+use PHPpatterns\Singleton\Interfaces\LogsInterface;
+
+class Debug implements LogsInterface {
+  private static Debug $instance;
   private string $fileLogs;
   
   private function __construct() {
-    $this->fileLogs = __DIR__ . '/logs.txt';
+    $this->fileLogs = __DIR__ . '/../logs.txt';
   }
   
-  private function __clone() {}
-  
-  public static function getInstance(): static
+  public static function getInstance(): self
   {
     if(empty(static::$instance)) static::$instance = new static();
     
