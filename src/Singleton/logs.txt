@@ -1,3 +1,0 @@
-Escrevendo padrões de projetos
-Esse é o padrão singleton
-Foi criado os padrões singleton e factory method
