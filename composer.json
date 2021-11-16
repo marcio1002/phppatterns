@@ -1,11 +1,11 @@
 {
-    "name": "u0_a302/phppatterns",
+    "name": "marcio1002/design-patterns",
     "description": "Conceito de patterns em php",
     "type": "project",
     "license": "Aladdin",
     "autoload": {
         "psr-4": {
-            "PHPpatterns\\": "src/"
+            "DesignPatterns\\": "src/"
         }
     },
     "require": {}
