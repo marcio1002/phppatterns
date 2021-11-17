@@ -13,7 +13,7 @@ abstract class LivroPrototype
 
     private function isProp($prop): ?bool
     {
-        if (!property_exists($this, $prop))
+        if (!property_exists(__CLASS__, $prop))
             throw new \Exception("Property $prop does not exist");
 
         return true;

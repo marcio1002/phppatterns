@@ -1,22 +1,24 @@
 <?php
 namespace DesignPatterns\Creation\FactoryMethod\Interfaces;
 
+use Helpers\Console;
+
 abstract class CarInterface {
   
   protected string $name;
   
   public function accelerate(): void 
   {
-    echo "Accelerate {$this->name}" . PHP_EOL;
+    Console::log("Accelerate {$this->name}" . PHP_EOL, Console::FG_WHITE);
   }
   
   public function shiftMacha(): void
   {
-    echo "Shift macha {$this->name}" . PHP_EOL;
+    Console::log( "Shift macha {$this->name}" . PHP_EOL, Console::FG_YELLOW);
   }
   
   public function brake(): void
   {
-    echo "Break {$this->name}" . PHP_EOL;
+    Console::log("Break {$this->name}" . PHP_EOL, Console::FG_RED);
   }
 }

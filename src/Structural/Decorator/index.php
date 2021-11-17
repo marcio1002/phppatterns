@@ -10,7 +10,8 @@ use
 use
     DesignPatterns\Structural\Decorator\Equipment\RayBow,
     DesignPatterns\Structural\Decorator\Equipment\RingFire,
-    DesignPatterns\Structural\Decorator\Equipment\SwordMagic;
+    DesignPatterns\Structural\Decorator\Equipment\SwordMagic,
+    Helpers\Console;
 
 
 $mago = new Mago();
@@ -22,6 +23,6 @@ $archer = new RayBow($archer);
 $cavaleiro = new Cavaleiro();
 $cavaleiro = new SwordMagic($cavaleiro);
 
-echo "{$mago->getName()} = {$mago->getStrike()} Ataque\n";
-echo "{$archer->getName()} = {$archer->getStrike()} Ataque\n";
-echo "{$cavaleiro->getName()} = {$cavaleiro->getStrike()} Ataque\n";
+Console::log("{$mago->getName()} = {$mago->getStrike()} Ataque\n", Console::FG_GREEN, Console::BOLD);
+Console::log("{$archer->getName()} = {$archer->getStrike()} Ataque\n", Console::FG_GREEN, Console::BOLD);
+Console::log("{$cavaleiro->getName()} = {$cavaleiro->getStrike()} Ataque\n", Console::FG_GREEN, Console::BOLD);

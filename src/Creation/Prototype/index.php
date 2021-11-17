@@ -4,6 +4,7 @@ require_once dirname(__DIR__, 3) . "/vendor/autoload.php";
 use 
     DesignPatterns\Creation\Prototype\Livros\LivroPHP,
     DesignPatterns\Creation\Prototype\Livros\LivroPython;
+use Helpers\Console;
 
 $livroPHP = new LivroPHP;
 $livroPHP->title = "PHP Patterns";
@@ -35,9 +36,8 @@ foreach($titulars as $titular) {
 
 
 foreach($livros as $livro) {
-    echo "
-        \e[00;37;4mTitulo:\e]m \e[00;32;1m {$livro->title}\n\n\e]m
-        \e[00;37;4mConteudo:\e]m \e[00;33;1m {$livro->content}\n\n\e]m
-        \e[00;37;4mNome Titular:\e]m \e[00;36;1m {$livro->nameTitular}\n\n\n\n\e]m
-    ";
+    Console::log($livro->title . PHP_EOL, Console::FG_GREEN, Console::BOLD);
+    Console::log($livro->content . PHP_EOL, Console::FG_GREEN_LIGHT, Console::BOLD);
+    Console::log($livro->nameTitular . PHP_EOL, Console::FG_YELLOW, Console::BOLD);
+    echo PHP_EOL;
 }

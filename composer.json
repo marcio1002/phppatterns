@@ -5,7 +5,8 @@
     "license": "Aladdin",
     "autoload": {
         "psr-4": {
-            "DesignPatterns\\": "src/"
+            "DesignPatterns\\": "src/",
+            "Helpers\\": "helpers"
         }
     },
     "require": {}
