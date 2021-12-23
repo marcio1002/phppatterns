@@ -16,6 +16,7 @@ use
 
 $mago = new Mago();
 $mago = new RingFire($mago);
+$mago = new RayBow($mago);
 
 $archer = new Archer();
 $archer = new RayBow($archer);

@@ -22,8 +22,6 @@ $text
     ->write('E')
     ->write('V');
 
-$teste = "\e[00;31;0m" . PHP_VERSION . "\e[m";
-
 Console::log($text->getText() . PHP_EOL, Console::FG_GREEN);
 
 $text->undo();

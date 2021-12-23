@@ -32,12 +32,12 @@ class Console
 
     public static function log(string $message, ...$color)
     {
-        $message = static::prepareMessage($message, $color);
+        $message = static::formatMessage($message, $color);
 
         file_put_contents('php://output', $message);
     }
 
-    private static function prepareMessage(string $message, array $color)
+    private static function formatMessage(string $message, array $color)
     {
         if (count($color) == 0)
             return $message;
