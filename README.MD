@@ -1,7 +1,6 @@
 # Designer Patterns with PHP
 
-
-Based on the study of the book designer patterns with PHP 7
+Code based on the designer patterns book with PHP 7
 
 <div align='center'>
   <img src='./designer-patterns-with-php.jpg' width='35%'>
