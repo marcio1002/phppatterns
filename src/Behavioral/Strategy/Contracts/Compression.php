@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Behavioral\Strategy\Interfaces;
+namespace DesignPatterns\Behavioral\Strategy\Contracts;
 
 use Helpers\Console;
 

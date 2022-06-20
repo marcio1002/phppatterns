@@ -3,8 +3,8 @@
 namespace DesignPatterns\Creation\FactoryMethod\Factories;
 
 use 
-  DesignPatterns\Creation\FactoryMethod\Interfaces\FactoryInterface,
-  DesignPatterns\Creation\FactoryMethod\Interfaces\CarInterface;
+  DesignPatterns\Creation\FactoryMethod\Contracts\FactoryInterface,
+  DesignPatterns\Creation\FactoryMethod\Contracts\CarInterface;
 
 
 class TeslaFactory implements FactoryInterface {

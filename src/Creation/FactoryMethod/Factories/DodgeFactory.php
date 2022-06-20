@@ -3,8 +3,8 @@
 namespace DesignPatterns\Creation\FactoryMethod\Factories;
 
 use
-  DesignPatterns\Creation\FactoryMethod\Interfaces\CarInterface,
-  DesignPatterns\Creation\FactoryMethod\Interfaces\FactoryInterface;
+  DesignPatterns\Creation\FactoryMethod\Contracts\CarInterface,
+  DesignPatterns\Creation\FactoryMethod\Contracts\FactoryInterface;
 
 class DodgeFactory implements FactoryInterface {
   const CHARGER = 'charger';

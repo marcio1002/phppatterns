@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Creation\Singleton\Logs;
 
-use DesignPatterns\Creation\Singleton\Interfaces\LogsInterface;
+use DesignPatterns\Creation\Singleton\Contracts\LogsInterface;
 
 class Debug implements LogsInterface {
   private static Debug $instance;

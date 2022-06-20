@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Structural\Decorator\Interfaces;
+namespace DesignPatterns\Structural\Decorator\Contracts;
 
 abstract class Persona
 {

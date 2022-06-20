@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Structural\Decorator\Persona;
 
-use DesignPatterns\Structural\Decorator\Interfaces\Persona;
+use DesignPatterns\Structural\Decorator\Contracts\Persona;
 
 
 class Cavaleiro extends Persona

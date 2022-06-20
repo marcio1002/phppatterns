@@ -1,7 +1,7 @@
 <?php
 namespace DesignPatterns\Creation\FactoryMethod\Cars;
 
-use DesignPatterns\Creation\FactoryMethod\Interfaces\CarInterface;
+use DesignPatterns\Creation\FactoryMethod\Contracts\CarInterface;
 
 class TeslaS extends CarInterface {
   function __construct() 

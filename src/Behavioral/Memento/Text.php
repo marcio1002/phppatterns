@@ -7,7 +7,7 @@ use
     DesignPatterns\Behavioral\Memento\TextMemento;
 
 /**
- * The Memento class
+ * The Text class
  */
 class Text
 {
@@ -20,6 +20,10 @@ class Text
         $this->text = '';
     }
 
+    /**
+     * @param string $text
+     * @return self
+     */
     public function write(string $text): self
     {
         $this->careTaker->add(new TextMemento($this->text));
@@ -27,11 +31,17 @@ class Text
         return $this;
     }
 
+    /**
+     * @return string
+     */
     public function undo(): string
     {
         return $this->careTaker->returnLastState()->getText();
     }
 
+    /**
+     * @return string
+     */
     public function getText(): string
     {
         return $this->text;

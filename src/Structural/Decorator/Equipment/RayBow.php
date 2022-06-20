@@ -2,8 +2,8 @@
 namespace DesignPatterns\Structural\Decorator\Equipment;
 
 use 
-    DesignPatterns\Structural\Decorator\Interfaces\Equipment,
-    DesignPatterns\Structural\Decorator\Interfaces\Persona;
+    DesignPatterns\Structural\Decorator\Contracts\Equipment,
+    DesignPatterns\Structural\Decorator\Contracts\Persona;
 
 class RayBow extends Equipment
 {

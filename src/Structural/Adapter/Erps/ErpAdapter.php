@@ -3,7 +3,7 @@
 namespace DesignPatterns\Structural\Adapter\Erps;
 
 use 
-    DesignPatterns\Structural\Adapter\Interfaces\ErpAdapterInterface,
+    DesignPatterns\Structural\Adapter\Contracts\ErpAdapterInterface,
     DesignPatterns\Structural\Adapter\Erps\Erp,
     DesignPatterns\Structural\Adapter\Models\Order;
 

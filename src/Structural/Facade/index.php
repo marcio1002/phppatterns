@@ -10,4 +10,4 @@ $codeProduct = '3454354545353453';
 $cpf = '12334444374';
 
 if(LibraryFacades::makeBook($codeProduct, $cpf))
-    echo LibraryFacades::sendMessage($cpf,$codeProduct, 'API_KEY', '55MARCIO@DEV*(D') ? '✅' : '❌';
+    LibraryFacades::sendMessage($cpf,$codeProduct, 'API_KEY', '55MARCIO@DEV*(D');

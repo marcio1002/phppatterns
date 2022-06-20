@@ -23,11 +23,13 @@ Console::log(
     Console::FG_WHITE, 
     Console::BOLD
 );
+
 Console::log(
     "Preço final do Eletrônico: R\${$priceElectronic} reais\n", 
     Console::FG_GREEN_LIGHT,
     Console::BOLD
 );
+
 Console::log(
     "Preço final do vestuário: R\${$priceClothes} reais\n", 
     Console::FG_YELLOW,

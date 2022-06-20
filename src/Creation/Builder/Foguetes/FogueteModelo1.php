@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Creation\Builder\Foguetes;
 
-use DesignPatterns\Creation\Builder\Interfaces\FogueteBuild;
+use DesignPatterns\Creation\Builder\Contracts\FogueteBuild;
 
 class FogueteModelo1 extends FogueteBuild {
 

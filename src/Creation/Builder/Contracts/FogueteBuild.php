@@ -1,5 +1,5 @@
 <?php
-namespace  DesignPatterns\Creation\Builder\Interfaces;
+namespace  DesignPatterns\Creation\Builder\Contracts;
 
 
 use DesignPatterns\Creation\Builder\Foguetes\Foguete;

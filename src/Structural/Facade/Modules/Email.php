@@ -2,6 +2,8 @@
 
 namespace DesignPatterns\Structural\Facade\Modules;
 
+use Helpers\Console;
+
 class Email
 {
     /**
@@ -21,7 +23,7 @@ class Email
      */
     public function send(string $sendName, string $email, string $subject, string $message): bool
     {
-        echo "\e[00;32;1mEmail enviado com sucesso!\e[m" . PHP_EOL;
+        Console::log('Email enviado com sucesso' . PHP_EOL, Console::FG_BLUE);
         return true;
     }
 }

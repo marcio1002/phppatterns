@@ -13,8 +13,6 @@ use
     };
 
 $compression = new CompressionContext(new Zip);
-
-
 $compression->compress('/tmp/test.zip');
 
 $compression->setCompression(new Rar);

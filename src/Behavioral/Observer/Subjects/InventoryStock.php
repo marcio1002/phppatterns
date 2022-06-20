@@ -2,8 +2,8 @@
 namespace DesignPatterns\Behavioral\Observer\Subjects;
 
 use 
-    DesignPatterns\Behavioral\Observer\Interfaces\SubjectInterface,
-    DesignPatterns\Behavioral\Observer\Interfaces\ObserverInterface;
+    DesignPatterns\Behavioral\Observer\Contracts\SubjectInterface,
+    DesignPatterns\Behavioral\Observer\Contracts\ObserverInterface;
 
 class InventoryStock implements SubjectInterface
 {

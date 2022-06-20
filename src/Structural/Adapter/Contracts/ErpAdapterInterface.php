@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Structural\Adapter\Interfaces;
+namespace DesignPatterns\Structural\Adapter\Contracts;
 
 use 
     DesignPatterns\Structural\Adapter\Erps\Erp,

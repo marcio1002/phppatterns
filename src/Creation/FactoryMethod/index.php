@@ -16,6 +16,7 @@ $charger->accelerate();
 $charger->shiftMacha();
 $charger->brake();
 echo PHP_EOL;
+
 $dart->accelerate();
 $dart->shiftMacha();
 $dart->brake();
@@ -30,6 +31,7 @@ $teslaX->accelerate();
 $teslaX->shiftMacha();
 $teslaX->brake();
 echo PHP_EOL;
+
 $teslaS->accelerate();
 $teslaS->shiftMacha();
 $teslaS->brake();

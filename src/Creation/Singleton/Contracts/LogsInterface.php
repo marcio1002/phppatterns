@@ -1,6 +1,6 @@
 <?php
  
-namespace DesignPatterns\Creation\Singleton\Interfaces;
+namespace DesignPatterns\Creation\Singleton\Contracts;
 
 interface LogsInterface {
   public static function getInstance(): self;

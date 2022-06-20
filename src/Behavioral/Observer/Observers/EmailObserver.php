@@ -3,7 +3,7 @@
 namespace DesignPatterns\Behavioral\Observer\Observers;
 
 use 
-    DesignPatterns\Behavioral\Observer\Interfaces\ObserverInterface,
+    DesignPatterns\Behavioral\Observer\Contracts\ObserverInterface,
     Helpers\Console;
 
 class EmailObserver implements ObserverInterface

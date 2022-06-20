@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Behavioral\Strategy;
 
-use DesignPatterns\Behavioral\Strategy\Interfaces\Compression;
+use DesignPatterns\Behavioral\Strategy\Contracts\Compression;
 
 class CompressionContext
 {

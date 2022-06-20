@@ -1,5 +1,5 @@
 <?php
-namespace DesignPatterns\Creation\FactoryMethod\Interfaces;
+namespace DesignPatterns\Creation\FactoryMethod\Contracts;
 
 use Helpers\Console;
 

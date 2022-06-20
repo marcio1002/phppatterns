@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creation\Prototype\Interfaces;
+namespace DesignPatterns\Creation\Prototype\Contracts;
 
 abstract class LivroPrototype
 {

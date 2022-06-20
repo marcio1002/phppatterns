@@ -4,7 +4,7 @@ namespace DesignPatterns\Creation\Builder\Factories;
 
 use 
    DesignPatterns\Creation\Builder\Foguetes\Foguete,
-   DesignPatterns\Creation\Builder\Interfaces\FogueteBuild;
+   DesignPatterns\Creation\Builder\Contracts\FogueteBuild;
 
 class FactoryFoguete {
 

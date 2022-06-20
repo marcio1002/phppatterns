@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Behavioral\Observer\Interfaces;
+namespace DesignPatterns\Behavioral\Observer\Contracts;
 
 interface ObserverInterface 
 {

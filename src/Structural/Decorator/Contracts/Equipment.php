@@ -1,7 +1,7 @@
 <?php
-namespace DesignPatterns\Structural\Decorator\Interfaces;
+namespace DesignPatterns\Structural\Decorator\Contracts;
 
-use DesignPatterns\Structural\Decorator\Interfaces\Persona;
+use DesignPatterns\Structural\Decorator\Contracts\Persona;
 
 abstract class Equipment extends Persona {
 

@@ -2,6 +2,8 @@
 
 namespace DesignPatterns\Structural\Facade\Modules;
 
+use Helpers\Console;
+
 class Sms
 {
     private string $token;
@@ -22,7 +24,7 @@ class Sms
     public function send(string $apiToken, string $sendName, string $destTell, string $message): bool
     {
         if($this->token === $apiToken) {
-            echo "\e[00;34;1mSMS enviado com sucesso\e[m" . PHP_EOL;
+            Console::log('SMS enviado com sucesso' . PHP_EOL, Console::FG_BLUE);
             return true;
         }
 

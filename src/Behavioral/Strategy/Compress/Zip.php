@@ -3,7 +3,7 @@
 namespace DesignPatterns\Behavioral\Strategy\Compress;
 
 use 
-    DesignPatterns\Behavioral\Strategy\Interfaces\Compression,
+    DesignPatterns\Behavioral\Strategy\Contracts\Compression,
     Helpers\Console;
 
 class Zip extends Compression

@@ -1,8 +1,8 @@
 <?php
 
-namespace DesignPatterns\Behavioral\Observer\Interfaces;
+namespace DesignPatterns\Behavioral\Observer\Contracts;
 
-use DesignPatterns\Behavioral\Observer\Interfaces\ObserverInterface;
+use DesignPatterns\Behavioral\Observer\Contracts\ObserverInterface;
 
 interface SubjectInterface
 {
