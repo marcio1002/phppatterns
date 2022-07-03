@@ -8,7 +8,6 @@ use
 use
     DesignPatterns\Structural\Bridge\Devices\TV,
     DesignPatterns\Structural\Bridge\Devices\Radio;
-use Helpers\Console;
 
 $remoteControl = new Remote(new Radio());
 $remoteControl->togglePower();
