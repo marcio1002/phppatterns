@@ -5,19 +5,9 @@ namespace DesignPatterns\Creation\Prototype\Contracts;
 abstract class LivroPrototype
 {
 
-
     private string $title;
     private string $content;
     private string $nameTitular;
-
-
-    private function isProp($prop): ?bool
-    {
-        if (!property_exists(__CLASS__, $prop))
-            throw new \Exception("Property $prop does not exist");
-
-        return true;
-    }
 
     public function __get($attr)
     {
@@ -31,5 +21,18 @@ abstract class LivroPrototype
         $this->isProp($attr);
 
         $this->$attr = $value;
+    }
+
+    public function clone()
+    {
+        return clone $this;
+    }
+
+    private function isProp($prop): ?bool
+    {
+        if (!property_exists(__CLASS__, $prop))
+            throw new \Exception("Property $prop does not exist");
+
+        return true;
     }
 }

@@ -25,11 +25,11 @@ $titulars = [
 ];
 
 foreach($titulars as $titular) {
-    $livroBuyerPHP = clone $livroPHP;
+    $livroBuyerPHP = $livroPHP->clone();
     $livroBuyerPHP->nameTitular = $titular;
     $livros[] = $livroBuyerPHP;
 
-    $livroBuyerPython = clone $livroPython;
+    $livroBuyerPython = $livroPython->clone();
     $livroBuyerPython->nameTitular = $titular;
     $livros[] = $livroBuyerPython;
 }
