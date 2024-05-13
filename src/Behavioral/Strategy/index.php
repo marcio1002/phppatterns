@@ -20,5 +20,3 @@ $compression->compress('/tmp/test.rar');
 
 $compression->setCompression(new Tar);
 $compression->compress('/tmp/test.tar');
-
-$compression->orderFile();

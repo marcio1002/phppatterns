@@ -22,9 +22,4 @@ class CompressionContext
     {
         $this->compression->compress($destination);
     }
-
-    public function orderFile(): void
-    {
-        $this->compression->renameFilesSort();
-    }
 }

@@ -34,13 +34,12 @@ class Console
     {
         $message = static::formatMessage($message, $color);
 
-        file_put_contents('php://output', $message);
+        fwrite(STDOUT, $message);
     }
 
     private static function formatMessage(string $message, array $color)
     {
-        if (count($color) == 0)
-            return $message;
+        if (count($color) == 0) return $message;
 
         $foreground = array_filter($color, fn ($cl) => $cl >= 30 && $cl <= 37);
         $background = array_filter($color, fn ($cl) => $cl >= 40 && $cl <= 47);
@@ -52,6 +51,6 @@ class Console
 
         $color = trim(join(';', [$background, $foreground, $transform]), ";");
 
-        return "\e[${color}m$message\e[m";
+        return "\e[{$color}m{$message}\e[m";
     }
 }
