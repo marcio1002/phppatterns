@@ -7,13 +7,15 @@ use
 
 class InventoryStock implements SubjectInterface
 {
+    /**
+     *
+     * @var array<ObserverInterface> 
+     */
     private array $observers = [];
 
     public function updateStock(string $code, int $quantity): void
     {
-        if($quantity == 0) {
-            $this->notify($code);
-        }
+        $quantity === 0 && $this->notify($code);
     }
 
     public function add(ObserverInterface $observer): void
